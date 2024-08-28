@@ -5,30 +5,36 @@ import Booking from "../components/Booking";
 
 const Home = () => {
   return (
-    <section className="flex">
+    <section className="flex relative">
       <Booking />
       <Header />
-      <div className="w-1/2">
-        <h1>Duplex Le14</h1>
+      <div className="w-1/2 mt-20 h-auto px-4">
+        <h1 className="text-4xl font-bold">Duplex Le14</h1>
         <h2>Maison de 120m2 en plein centre de Tain l'Hermitage</h2>
-        <div className="grid grid-cols-2 my-8">
-          <div className="bg-slate-400 rounded-md w-48 h-20">
-            <h2>Capacité</h2>
-            <span>4 personnes</span>
+        <div className="grid grid-cols-2 mt-8 mr-8">
+          <div className="rounded-md w-full h-28 flex flex-col items-center justify-center">
+            <div className="">
+              <h2>Capacité</h2>
+              <span>4 personnes</span>
+            </div>
           </div>
-          <div className="bg-slate-200 rounded-md w-48 h-20">
-            <h2>120m2</h2>
-            <span>4 personnes</span>
+          <div className="bg-persoGrey rounded-md w-full h-28 flex flex-col items-center justify-center">
+            <div className="">
+              <h2>120m2</h2>
+              <span>4 personnes</span>
+            </div>
           </div>
           <div
-            className="rounded-lg w-full h-full bg-center bg-cover"
+            className="rounded-lg w-full h-36 bg-center bg-cover"
             style={{
               backgroundImage: `url(${backgroundImg})`,
             }}
           ></div>
-          <div className="">
-            <h2>120m2</h2>
-            <span>4 personnes</span>
+          <div className="rounded-lg w-full h-36 flex flex-col items-center justify-center">
+            <div className="">
+              <h2>Capacité</h2>
+              <span>4 personnes</span>
+            </div>
           </div>
         </div>
       </div>
