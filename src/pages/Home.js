@@ -1,12 +1,12 @@
 import React from "react";
 import Header from "../components/Header";
 import backgroundImg from "../assets/landscape_art_road_127350_800x600.jpg";
-import Activity from "../components/Activity";
+import Booking from "../components/Booking";
 
 const Home = () => {
   return (
     <section className="flex">
-      <Activity />
+      <Booking />
       <Header />
       <div className="w-1/2">
         <h1>Duplex Le14</h1>
