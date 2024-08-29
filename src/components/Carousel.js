@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 
+// modif project.pictures
+
 const Carousel = ({ project }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
