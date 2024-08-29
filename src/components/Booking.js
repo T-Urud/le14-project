@@ -3,11 +3,11 @@ import backgroundImg from "../assets/landscape_art_road_127350_800x600.jpg";
 
 const Booking = () => {
   return (
-    <div className="w-1/2 h-full relative flex items-center justify-center">
+    <div className="w-full h-full relative flex items-center justify-center">
       <img src={backgroundImg} alt className="w-full h-full rounded-r-md" />
       <div className="absolute inset-0 flex items-center justify-center">
-        <div className=" bg-white max-w-80 w-full p-5 rounded-lg">
-          <form className="flex flex-wrap justify-center">
+        <div className=" bg-white max-w-96 w-full p-8 rounded-lg max-h-96 h-full">
+          <form className="flex flex-wrap justify-center h-full">
             <legend className="text-xl font-semibold">
               Réserver votre séjour
             </legend>
