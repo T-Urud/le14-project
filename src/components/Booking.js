@@ -1,10 +1,12 @@
 import React, { useState } from "react";
 import DatePicker from "react-date-picker";
 import { useForm } from "react-hook-form";
-import backgroundImg from "../assets/landscape_art_road_127350_800x600.jpg";
+import backgroundImg from "../assets/img/Tain-l-Hermitage-Rhône-France.webp";
+// import backgroundImg from "../assets/img/timthumb-5.png";
 
 const Booking = () => {
-  const [date, setDate] = useState(new Date());
+  const [arrivingDate, setArrivingDate] = useState(new Date());
+  const [leavingDate, setLeavingDate] = useState(new Date());
 
   const {
     register,
@@ -51,15 +53,18 @@ const Booking = () => {
             <div className="w-full flex justify-center items-center p-2 bg-transparent border rounded-full gap-4">
               <span>Arrivée</span>
               <DatePicker
-                value={date}
-                onChange={setDate}
-                minDate={date}
-                // className="border-transparent"
+                value={arrivingDate}
+                onChange={setArrivingDate}
+                minDate={arrivingDate}
               />
             </div>
             <div className="w-full flex justify-center items-center p-2 bg-transparent border rounded-full my-1 gap-4">
               <span>Départ</span>
-              <DatePicker value={date} onChange={setDate} minDate={date} />
+              <DatePicker
+                value={leavingDate}
+                onChange={setLeavingDate}
+                minDate={arrivingDate}
+              />
             </div>
             <div className="w-full flex justify-center items-center p-2 bg-transparent border rounded-full my-1">
               <input

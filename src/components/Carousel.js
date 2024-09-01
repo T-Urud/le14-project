@@ -1,51 +1,49 @@
 import React, { useState } from "react";
 
-// modif project.pictures
+const Carousel = ({ activityImg }) => {
+  // Determine if pictures are in an array or a single image string
+  const pictures = Array.isArray(activityImg.picture)
+    ? activityImg.picture
+    : [activityImg.picture];
 
-const Carousel = ({ project }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const nextSlide = () => {
-    setCurrentSlide((prev) =>
-      prev === project.pictures.length - 1 ? 0 : prev + 1
-    );
+    setCurrentSlide((prev) => (prev === pictures.length - 1 ? 0 : prev + 1));
   };
 
   const previousSlide = () => {
-    setCurrentSlide((prev) =>
-      prev === 0 ? project.pictures.length - 1 : prev - 1
-    );
+    setCurrentSlide((prev) => (prev === 0 ? pictures.length - 1 : prev - 1));
   };
 
   return (
     <div className="carousel">
       <button
-        className={project.pictures.length === 1 ? `prev hidden` : "prev"}
+        // className={activityImg.length === 1 ? `prev hidden` : "prev"}
         onClick={previousSlide}
       >
         &#10096;
       </button>
       <button
-        className={project.pictures.length === 1 ? `next hidden` : "next"}
+        // className={activityImg.length === 1 ? `next hidden` : "next"}
         onClick={nextSlide}
       >
         &#10097;
       </button>
       <ul>
-        {project.pictures.map((slide, index) => (
+        {pictures.map((slide, index) => (
           <li
             key={index}
-            className={`slide ${index === currentSlide ? "active" : ""}`}
+            className="w-80 h-80"
+            // className={`slide ${index === currentSlide ? "active" : ""}`}
           >
-            <img src={project.pictures[currentSlide]} alt={project.title} />
-            <span
-              className={
-                project.pictures.length === 1
-                  ? `displayNumberPictures hidden`
-                  : "displayNumberPictures"
-              }
-            >
-              {currentSlide + 1}/{project.pictures.length}
+            <img
+              src={slide}
+              alt={activityImg.title}
+              className="w-full h-full bg-cover bg-center"
+            />
+            <span>
+              {currentSlide + 1}/{pictures.length}
             </span>
           </li>
         ))}
