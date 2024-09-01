@@ -17,30 +17,31 @@ const Carousel = ({ activityImg }) => {
   };
 
   return (
-    <div className="carousel">
+    <div className="w-full h-[500px] relative overflow-hidden">
       <button
-        // className={activityImg.length === 1 ? `prev hidden` : "prev"}
+        className="absolute z-10 left-4 top-1/2 -translate-y-1/2 text-black bg-white"
         onClick={previousSlide}
       >
         &#10096;
       </button>
       <button
-        // className={activityImg.length === 1 ? `next hidden` : "next"}
+        className="absolute z-10 right-4 top-1/2 -translate-y-1/2 text-black bg-white"
         onClick={nextSlide}
       >
         &#10097;
       </button>
-      <ul>
+      <ul className="relative h-full w-full">
         {pictures.map((slide, index) => (
           <li
             key={index}
-            className="w-80 h-80"
-            // className={`slide ${index === currentSlide ? "active" : ""}`}
+            className={`absolute inset-0 transition-opacity duration-500 ease-in-out ${
+              index === currentSlide ? "opacity-100" : "opacity-0"
+            }`}
           >
             <img
               src={slide}
               alt={activityImg.title}
-              className="w-full h-full bg-cover bg-center"
+              className="w-full h-full object-cover"
             />
             <span>
               {currentSlide + 1}/{pictures.length}

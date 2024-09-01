@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "./Header";
-import backgroundImg from "../assets/landscape_art_road_127350_800x600.jpg";
+import backgroundImg from "../assets/img/landscape_art_road_127350_800x600.jpg";
 import Booking from "./Booking";
 
 const TopSection = () => {
@@ -22,7 +22,7 @@ const TopSection = () => {
               </div>
             </div>
             <div
-              className="rounded-lg w-full h-36 bg-center bg-cover"
+              className="rounded-lg w-full h-36 object-cover"
               style={{
                 backgroundImage: `url(${backgroundImg})`,
               }}

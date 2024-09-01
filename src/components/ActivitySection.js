@@ -22,7 +22,7 @@ const ActivitySection = () => {
   }
 
   return (
-    <section className="px-4">
+    <section className="px-4 my-4">
       <div className="">
         <h2>Que faire dans les alentours ? </h2>
         <p>
