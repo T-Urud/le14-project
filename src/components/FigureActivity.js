@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const FigureActivity = ({ activity }) => {
   return (
-    <li className="w-1/3">
+    <li className="w-2/5">
       <a
         href={activity.link}
         target="blank"
@@ -17,7 +17,7 @@ const FigureActivity = ({ activity }) => {
             className="w-full h-full bg-cover bg-center"
           />
           <div className="inset-0 absolute flex justify-end items-center flex-col z-10 py-4">
-            <h3 className="text-xl italic bottom-1 text-white uppercase">
+            <h3 className="text-xl italic bottom-1 text-white uppercase text-center">
               {activity.title}
             </h3>
             <div className="z-10 cursor-pointer w-full flex items-center justify-center opacity-0 group-hover:opacity-100 duration-500">

@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import DatePicker from "react-date-picker";
 import { useForm } from "react-hook-form";
-import backgroundImg from "../assets/img/Tain-l-Hermitage-Rhône-France.webp";
-// import backgroundImg from "../assets/img/timthumb-5.png";
+import image from "../images";
 
 const Booking = () => {
   const [arrivingDate, setArrivingDate] = useState(new Date());
@@ -18,7 +17,7 @@ const Booking = () => {
 
   return (
     <div className="w-full h-full relative flex items-center justify-center">
-      <img src={backgroundImg} alt="" className="w-full h-full rounded-r-2xl" />
+      <img src={image[0]} alt="" className="w-full h-full rounded-r-2xl" />
       <div className="absolute inset-0 flex items-center justify-center">
         <div className=" bg-white max-w-96 w-full p-8 rounded-lg max-h-96 h-full">
           <form
@@ -30,24 +29,28 @@ const Booking = () => {
             </legend>
             <div className="flex gap-2 my-3 w-full">
               <div className="w-1/2 flex justify-center items-center p-2 bg-persoGrey rounded-full">
-                <input
-                  type="number"
-                  placeholder="Adulte(s)"
+                <select
                   {...register("Adults", { required: true })}
-                  max={4}
-                  min={1}
                   className="w-full overflow-hidden outline-none bg-persoGrey text-center"
-                />
+                >
+                  <option value>Adulte(s) </option>
+                  <option value="1 ">1 </option>
+                  <option value=" 2 "> 2 </option>
+                  <option value=" 3"> 3</option>
+                  <option value=" 4"> 4</option>
+                </select>
               </div>
               <div className="w-1/2 flex justify-center items-center p-2 bg-persoGrey rounded-full">
-                <input
-                  type="number"
-                  placeholder="Enfant(s)"
+                <select
                   {...register("Kids", { required: true })}
-                  max={4}
-                  min={0}
                   className="w-full overflow-hidden outline-none bg-persoGrey text-center"
-                />
+                >
+                  <option value>Enfant(s) </option>
+                  <option value="0 ">0 </option>
+                  <option value="1 ">1 </option>
+                  <option value=" 2 "> 2 </option>
+                  <option value=" 3"> 3</option>
+                </select>
               </div>
             </div>
             <div className="w-full flex justify-center items-center p-2 bg-transparent border rounded-full gap-4">

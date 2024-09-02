@@ -23,7 +23,7 @@ const CarouselFramer = () => {
         className="flex "
       >
         {images.map((image) => (
-          <motion.div className="min-h-[30rem] min-w-[20rem] p-10">
+          <motion.div className="min-h-[30rem] min-w-[20rem] py-10 px-5">
             <img
               src={image}
               key={image}

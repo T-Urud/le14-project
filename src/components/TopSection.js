@@ -5,7 +5,7 @@ import Booking from "./Booking";
 
 const TopSection = () => {
   return (
-    <section className="grid grid-cols-2 w-screen">
+    <section className="grid grid-cols-2">
       <Booking />
       <div className="w-full flex flex-col">
         <Header />
