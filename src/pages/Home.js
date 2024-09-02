@@ -2,7 +2,7 @@ import React from "react";
 import TopSection from "../components/TopSection";
 import ActivitySection from "../components/ActivitySection";
 import CarouselFramer from "../components/CarouselFramer";
-import Map from "../components/Map";
+import Map_Social from "../components/Map_Social";
 
 const Home = () => {
   return (
@@ -10,7 +10,7 @@ const Home = () => {
       <TopSection />
       <CarouselFramer />
       <ActivitySection />
-      <Map />
+      <Map_Social />
     </div>
   );
 };
