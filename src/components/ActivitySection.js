@@ -22,7 +22,7 @@ const ActivitySection = () => {
   }
 
   return (
-    <section className="px-4 my-4">
+    <section id="activity" className="px-4 my-4">
       <div className="grid [grid-template-columns:30%_70%]">
         <div className="p-4">
           <h2 className="mb-8 uppercase">Que faire dans les alentours ? </h2>

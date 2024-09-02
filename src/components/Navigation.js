@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
 
 const Navigation = () => {
   return (
@@ -8,9 +9,16 @@ const Navigation = () => {
         <NavLink to="/" className={(nav) => (nav.isActive ? "" : "")}>
           <li>Accueil</li>
         </NavLink>
-        <NavLink to="/contact" className={(nav) => (nav.isActive ? "" : "")}>
-          <li>Contact</li>
-        </NavLink>
+        <li>
+          <Link smooth to="#activity">
+            Activités
+          </Link>
+        </li>
+        <li>
+          <Link smooth to="#map">
+            map
+          </Link>
+        </li>
       </ul>
     </div>
   );
