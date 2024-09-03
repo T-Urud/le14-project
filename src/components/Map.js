@@ -10,11 +10,11 @@ const Map = () => {
   });
 
   return (
-    <div className="h-80 p-5">
+    <div className="h-80 p-5 w-1/2">
       <MapContainer
         center={[45.0708, 4.84]}
         zoom={14}
-        className="w-1/2 h-full rounded-xl"
+        className="w-full h-full rounded-xl"
       >
         <TileLayer
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"

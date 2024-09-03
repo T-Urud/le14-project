@@ -6,9 +6,11 @@ const Navigation = () => {
   return (
     <div className="">
       <ul className="flex gap-8 uppercase font-bold">
-        <NavLink to="/" className={(nav) => (nav.isActive ? "" : "")}>
-          <li>Accueil</li>
-        </NavLink>
+        <li>
+          <Link smooth to="#carousel">
+            La maison
+          </Link>
+        </li>
         <li>
           <Link smooth to="#activity">
             Activités

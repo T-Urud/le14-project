@@ -5,12 +5,12 @@ import Booking from "./Booking";
 
 const TopSection = () => {
   return (
-    <section className="grid grid-cols-2">
+    <section className="flex flew-wrap md:flex-col-reverse">
       <Booking />
       <div className="w-full flex flex-col">
         <Header />
         <div className="h-full px-4 flex flex-col justify-end">
-          <h1 className="text-4xl font-bold">Duplex Le14</h1>
+          <h1 className="text-4xl font-bolder">Duplex Le14</h1>
           <h2 className="mt-4">
             Maison de 120m2 en plein centre de Tain l'Hermitage
           </h2>

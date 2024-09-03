@@ -12,7 +12,8 @@ const CarouselFramer = () => {
   }, []);
 
   return (
-    <motion.div
+    <motion.section
+      id="carousel"
       ref={carousel}
       className="cursor-grab overflow-hidden relative"
       whileTap={{ cursor: "grabbing" }}
@@ -33,7 +34,7 @@ const CarouselFramer = () => {
           </motion.div>
         ))}
       </motion.div>
-    </motion.div>
+    </motion.section>
   );
 };
 

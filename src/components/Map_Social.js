@@ -4,11 +4,9 @@ import Social from "./Social";
 
 const Map_Social = () => {
   return (
-    <section id="map">
+    <section id="map" className="flex">
       <Map />
-      <div className="">
-        <Social />
-      </div>
+      <Social />
     </section>
   );
 };
