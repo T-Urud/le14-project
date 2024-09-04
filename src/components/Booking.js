@@ -26,13 +26,17 @@ const Booking = () => {
   const remainingCapacity = 4 - selectedAdults;
 
   return (
-    <div className="h-auto md:mt-4">
-      <div className="w-full h-full relative flex items-center justify-center">
-        <img src={image[0]} alt="" className="w-full h-full rounded-r-2xl" />
-        <div className="absolute inset-0 flex items-center justify-center">
-          <div className=" bg-white w-full p-8 rounded-lg max-h-full flex-grow max-w-96">
+    <div className="h-auto w-full min-h-[472px] md:mt-4">
+      <div className="w-full h-full min-h-[472px] relative flex items-center justify-center">
+        <img
+          src={image[0]}
+          alt=""
+          className="w-full h-full min-h-[472px] rounded-r-2xl xs:rounded-none"
+        />
+        <div className="absolute inset-0 flex items-center justify-center p-5">
+          <div className=" bg-white w-full p-6 rounded-lg max-h-full flex-grow max-w-96">
             <form
-              className="flex flex-wrap justify-center h-full w-full font-thiner"
+              className="flex flex-wrap justify-center h-full w-full font-thiner flex-1"
               onSubmit={handleSubmit(onSubmit)}
             >
               <legend className="text-xl font-semibold">

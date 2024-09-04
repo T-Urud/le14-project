@@ -3,18 +3,18 @@ import { motion } from "framer-motion";
 
 const FigureActivity = ({ activity }) => {
   return (
-    <li className="w-2/5">
+    <li className="w-2/5 xs:w-full">
       <a
         href={activity.link}
         target="blank"
         rel="noopener noreferrer"
         className="group"
       >
-        <figure className="w-full relative flex items-center justify-center overflow-hidden gradient-overlay rounded-xl xs:h-64 xs:w-80">
+        <figure className="w-full relative flex items-center justify-center overflow-hidden gradient-overlay rounded-xl xs:h-64">
           <img
             src={activity.picture}
             alt={activity.description}
-            className="w-full h-full bg-cover bg-center"
+            className="w-full h-full object-cover object-center"
           />
           <div className="inset-0 absolute flex justify-end items-center flex-col z-10 py-4">
             <h3 className="text-xl italic bottom-1 text-white uppercase text-center">

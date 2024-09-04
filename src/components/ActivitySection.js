@@ -24,7 +24,7 @@ const ActivitySection = () => {
   return (
     <section id="activity" className="px-4 my-4">
       <div className="grid [grid-template-columns:30%_70%] md:flex flex-col">
-        <div className="p-4">
+        <div className="p-4 xs:">
           <h2 className="mb-4 uppercase font-bolder">
             Que faire dans le coin ?
           </h2>
@@ -40,7 +40,7 @@ const ActivitySection = () => {
           </p>
         </div>
         <div className="xs:flex xs:flex-col xs:items-center">
-          <ul className="flex flex-wrap gap-[2%] gap-y-8 justify-center xs:flex-col ">
+          <ul className="flex flex-wrap gap-[2%] gap-y-8 justify-center xs:flex-col xs:w-full">
             {activityImg.map((activity) => (
               <FigureActivity key={activity.id} activity={activity} />
             ))}
