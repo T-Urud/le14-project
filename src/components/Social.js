@@ -3,10 +3,10 @@ import { motion } from "framer-motion";
 
 const Social = () => {
   return (
-    <div className="bg-persoGrey rounded-xl p-5 m-5 w-1/2 flex items-center justify-center flex-col">
-      <div className="shadow-xl h-1/2 w-2/3 rounded-xl p-2">
-        <h3 className="mb-5 text-center">Retrouve-nous sur</h3>
-        <div className="flex gap-6 justify-center flex-wrap  items-center  ">
+    <div className="bg-persoGrey rounded-xl p-5 m-5 w-1/2 flex items-center justify-center flex-col sm:w-auto sm:my-0 sm:mx-5">
+      <div className="shadow-2xl w-2/3 rounded-xl p-2">
+        <h3 className="mb-5 text-center md:mb-0">Retrouve-nous sur</h3>
+        <div className="flex gap-6 justify-center flex-wrap  items-center md:p-4">
           <a href="https://x.com/" target="_blank" rel="noopener noreferrer">
             <motion.button
               className="h-12 w-12 grid place-items-center rounded-full outline outline-2 outline-white bg-transparent border-none"

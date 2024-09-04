@@ -5,7 +5,7 @@ import { HashLink as Link } from "react-router-hash-link";
 const Navigation = () => {
   return (
     <div className="">
-      <ul className="flex gap-8 uppercase font-bold">
+      <ul className="flex gap-8 uppercase lg:gap-4">
         <li>
           <Link smooth to="#carousel">
             La maison

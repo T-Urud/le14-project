@@ -10,7 +10,7 @@ const Map = () => {
   });
 
   return (
-    <div className="h-80 p-5 w-1/2">
+    <div className="h-80 p-5 w-1/2 sm:w-full">
       <MapContainer
         center={[45.0708, 4.84]}
         zoom={14}

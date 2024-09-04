@@ -10,7 +10,7 @@ const FigureActivity = ({ activity }) => {
         rel="noopener noreferrer"
         className="group"
       >
-        <figure className="w-full relative flex items-center justify-center overflow-hidden gradient-overlay rounded-xl">
+        <figure className="w-full relative flex items-center justify-center overflow-hidden gradient-overlay rounded-xl xs:h-64 xs:w-80">
           <img
             src={activity.picture}
             alt={activity.description}

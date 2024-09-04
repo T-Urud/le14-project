@@ -10,8 +10,8 @@ const TopSection = () => {
       <div className="w-full flex flex-col">
         <Header />
         <div className="h-full px-4 flex flex-col justify-end">
-          <h1 className="text-4xl font-bolder">Duplex Le14</h1>
-          <h2 className="mt-4">
+          <h1 className="text-4xl font-bolder py-2">Duplex Le14</h1>
+          <h2 className="">
             Maison de 120m2 en plein centre de Tain l'Hermitage
           </h2>
           <div className="grid grid-cols-2 mt-14 mr-8">

@@ -4,7 +4,7 @@ import Social from "./Social";
 
 const Map_Social = () => {
   return (
-    <section id="map" className="flex">
+    <section id="map" className="flex md:my-4 sm:flex-col">
       <Map />
       <Social />
     </section>
