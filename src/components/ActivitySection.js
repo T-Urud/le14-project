@@ -25,7 +25,7 @@ const ActivitySection = () => {
     <section id="activity" className="px-4 my-4">
       <div className="grid [grid-template-columns:30%_70%] md:flex flex-col">
         <div className="p-4 xs:">
-          <h2 className="mb-4 uppercase font-bolder">
+          <h2 className="mb-4 uppercase font-bolder xs:mb-0">
             Que faire dans le coin ?
           </h2>
           <p className="font-thiner md:mb-4 xs:hidden">

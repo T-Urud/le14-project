@@ -31,7 +31,7 @@ const Booking = () => {
         <img
           src={image[0]}
           alt=""
-          className="w-full h-full min-h-[472px] rounded-r-2xl xs:rounded-none"
+          className="w-full h-full min-h-[472px] rounded-r-2xl md:rounded-lg xs:rounded-none"
         />
         <div className="absolute inset-0 flex items-center justify-center p-5">
           <div className=" bg-white w-full p-6 rounded-lg max-h-full flex-grow max-w-96">
@@ -127,7 +127,9 @@ const Booking = () => {
               <button
                 type="submit"
                 // className="w-full mt-2 bg-black text-white rounded-full p-2 uppercase font-semibold cursor-pointer"
-                className="mt-4 bg-blue-500 text-white py-2 px-4 rounded"
+                // className="mt-4 bg-blue-500 text-white py-2 px-4 rounded"
+
+                className="text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 my-2"
               >
                 Réserver
               </button>
