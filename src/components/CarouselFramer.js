@@ -21,7 +21,7 @@ const CarouselFramer = () => {
       <motion.div
         drag="x"
         dragConstraints={{ right: 0, left: -width }}
-        className="flex "
+        className="flex"
       >
         {images.map((image) => (
           <motion.div className="min-h-[30rem] min-w-[20rem] py-10 px-5">
@@ -29,7 +29,7 @@ const CarouselFramer = () => {
               src={image}
               key={image}
               alt=""
-              className="w-full h-full rounded-sm pointer-events-none"
+              className="w-full h-full rounded-sm pointer-events-none object-cover"
             />
           </motion.div>
         ))}

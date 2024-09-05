@@ -1,7 +1,29 @@
-import image1 from "./assets/img/Tain-l-Hermitage-Rhône-France.webp";
-import image2 from "./assets/img/landscape_art_road_127350_800x600.jpg";
-import image3 from "./assets/img/timthumb-5.png";
-import image4 from "./assets/img/lampe-a-poser-champignon-design-2.jpg";
-import image5 from "./assets/img/Capture d'écran 2024-05-25 120513.png";
+import city from "./assets/img/Tain-l-Hermitage-Rhône-France.webp";
+import cityLogo from "./assets/img/timthumb-5.png";
+import terrasse2 from "./assets/img/appartment/terrasse2.jpeg";
+import salon from "./assets/img/appartment/salon.webp";
+import salon2 from "./assets/img/appartment/salon2.webp";
+import bureau from "./assets/img/appartment/bureau.jpeg";
+import escalier from "./assets/img/appartment/escalier.webp";
+import escalier2 from "./assets/img/appartment/escalier2.webp";
+import couloir from "./assets/img/appartment/couloir.jpeg";
+import chambre1 from "./assets/img/appartment/chambre1.jpeg";
+import sdb1 from "./assets/img/appartment/sdb1.jpeg";
+import chambre2 from "./assets/img/appartment/chambre2.webp";
+import sdb2 from "./assets/img/appartment/sdb2.jpeg";
 
-export default [image1, image2, image3, image4, image5];
+export default [
+  // city,
+  // cityLogo,
+  terrasse2,
+  salon,
+  salon2,
+  bureau,
+  escalier,
+  escalier2,
+  couloir,
+  chambre1,
+  sdb1,
+  chambre2,
+  sdb2,
+];
