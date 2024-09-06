@@ -29,7 +29,7 @@ const CarouselFramer = () => {
               src={image}
               key={image}
               alt=""
-              className="w-full h-full rounded-sm pointer-events-none object-cover"
+              className="w-full h-full rounded-lg pointer-events-none object-cover"
             />
           </motion.div>
         ))}

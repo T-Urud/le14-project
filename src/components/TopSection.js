@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "./Header";
 import terrasse from "../assets/img/appartment/terrasse.jpeg";
+import cityPic from "../assets/img/Tain-l-Hermitage-Rhône-France.webp";
 import Booking from "./Booking";
 
 const TopSection = () => {
@@ -26,7 +27,8 @@ const TopSection = () => {
             <div
               className="rounded-lg w-full h-52 bg-cover"
               style={{
-                backgroundImage: `url(${terrasse})`,
+                backgroundImage: `url(${cityPic})`,
+                // backgroundImage: `url(${terrasse})`,
               }}
             ></div>
             <div className="bg-persoGrey rounded-md w-full h-28 flex flex-col justify-end p-4">
