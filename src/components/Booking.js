@@ -15,6 +15,8 @@ const Booking = () => {
     setIsClicked(true);
   };
 
+  const [isHover, setIsHover] = useState(false);
+
   const [arrivingDate, setArrivingDate] = useState(new Date());
   const [leavingDate, setLeavingDate] = useState(new Date());
 
@@ -24,7 +26,6 @@ const Booking = () => {
     formState: { errors },
   } = useForm();
   const onSubmit = (data) => console.log(data);
-  // console.log(errors);
 
   const [full, setFull] = useState(false);
   const houseIsFull = () => {
@@ -37,22 +38,25 @@ const Booking = () => {
   const remainingCapacity = 4 - selectedAdults;
 
   return (
-    <div className="h-auto w-full min-h-[472px] md:mt-4">
+    <motion.div
+      className="h-auto w-full min-h-[472px] md:mt-4"
+      onHoverStart={() => setIsHover(true)}
+      onHoverEnd={() => setIsHover(false)}
+    >
       <div className="w-full h-full min-h-[472px] relative flex items-center justify-center">
         <img
           src={image[2]}
           alt=""
           className="w-full h-full min-h-[472px] rounded-r-2xl md:rounded-lg xs:rounded-none"
         />
-        {!isClicked && (
+
+        {!isClicked && isHover && (
           <motion.button
             onClick={handleUserClick}
             animate={isClicked ? "hidden" : "visible"}
-            exit={{ opacity: 0 }}
             transition={{ duration: 1 }}
             variants={variants}
-            className="absolute text-red-700 hover:text-white border border-red-700 hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-red-500 dark:text-red-500 dark:hover:text-white dark:hover:bg-red-600 dark:focus:ring-red-900"
-            // className="absolute text-white bg-red-600 hover:bg-red-700 focus:ring-4 focus:ring-red-400 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 focus:outline-none dark:focus:ring-red-800"
+            className="absolute text-white bg-red-600 hover:bg-red-700 focus:ring-4 focus:ring-red-400 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 focus:outline-none dark:focus:ring-red-800"
           >
             Réserver
           </motion.button>
@@ -63,7 +67,6 @@ const Booking = () => {
             initial={{ opacity: 0 }}
             transition={{ duration: 1 }}
             variants={variants}
-            // className="hidden absolute inset-0  items-center justify-center p-5"
             className="absolute inset-0 flex items-center justify-center p-5"
           >
             <div className=" bg-white w-full p-6 rounded-lg max-h-full flex-grow max-w-96">
@@ -163,9 +166,6 @@ const Booking = () => {
                 </div>
                 <button
                   type="submit"
-                  // className="w-full mt-2 bg-black text-white rounded-full p-2 uppercase font-semibold cursor-pointer"
-                  // className="mt-4 bg-blue-500 text-white py-2 px-4 rounded"
-
                   className="text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-red-300 dark:focus:ring-red-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 my-2"
                 >
                   Réserver
@@ -175,7 +175,7 @@ const Booking = () => {
           </motion.div>
         )}
       </div>
-    </div>
+    </motion.div>
   );
 };
 
