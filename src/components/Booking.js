@@ -27,11 +27,6 @@ const Booking = () => {
   } = useForm();
   const onSubmit = (data) => console.log(data);
 
-  const [full, setFull] = useState(false);
-  const houseIsFull = () => {
-    setFull(!full);
-  };
-
   const [selectedAdults, setSelectedAdults] = useState("");
   const [selectedKids, setSelectedKids] = useState("");
 
