@@ -4,8 +4,8 @@ import Logo from "../assets/img/Logo-Le14.webp";
 
 const Header = () => {
   return (
-    <header className="flex justify-between items-center p-5 w-full">
-      <div className="w-[150px] h-[150px]  rounded-full">
+    <header className="flex justify-between items-center p-5 w-full ">
+      <div className="w-[150px] h-[150px] xs:w-[75px] xs:h-[75px] rounded-full ">
         <img
           src={Logo}
           alt="Le14 logo"

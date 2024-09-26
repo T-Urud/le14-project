@@ -40,7 +40,7 @@ const ActivitySection = () => {
           </p>
         </div>
         <div className="xs:flex xs:flex-col xs:items-center">
-          <ul className="flex flex-wrap gap-[2%] gap-y-8 justify-center xs:flex-col xs:w-full">
+          <ul className="flex flex-wrap gap-[2%] gap-y-8 justify-end xs:flex-col xs:w-full">
             {activityImg.map((activity) => (
               <FigureActivity key={activity.id} activity={activity} />
             ))}

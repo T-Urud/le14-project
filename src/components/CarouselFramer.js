@@ -15,9 +15,12 @@ const CarouselFramer = () => {
     <motion.section
       id="carousel"
       ref={carousel}
-      className="cursor-grab overflow-hidden relative"
+      className="cursor-grab overflow-hidden relative my-5"
       whileTap={{ cursor: "grabbing" }}
     >
+      <h2 className="px-5 text-xl font-semibold absolute top-0">
+        Photos du duplex
+      </h2>
       <motion.div
         drag="x"
         dragConstraints={{ right: 0, left: -width }}

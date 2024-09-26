@@ -88,7 +88,7 @@ const Social = () => {
             </motion.button>
           </a>
           <a
-            href="https://www.airbnb.fr/"
+            href="https://www.airbnb.fr/rooms/668761335413611186?adults=1&children=0&enable_m3_private_room=true&infants=0&pets=0&search_mode=regular_search&check_in=2024-09-07&check_out=2024-09-12&source_impression_id=p3_1725472817_P3LlHi_T1MVTPXCV&previous_page_section_name=1000&federated_search_id=9a99b517-bbe2-43cb-ac30-557bcb2f1998"
             target="_blank"
             rel="noopener noreferrer"
           >
