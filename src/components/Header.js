@@ -9,7 +9,7 @@ const Header = () => {
         <img
           src={Logo}
           alt="Le14 logo"
-          className="w-full h-full object-contain rounded-full"
+          className="w-full h-full object-contain rounded-full scale-150"
         ></img>
       </div>
       <Navigation />

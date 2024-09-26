@@ -11,9 +11,6 @@ module.exports = {
       xs: { max: "475px" },
     },
     extend: {
-      backgroundColor: {
-        persoGrey: "#e3e6ed",
-      },
       colors: {
         socialColor: "#ede5ca",
       },
