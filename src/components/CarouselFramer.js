@@ -28,7 +28,7 @@ const CarouselFramer = () => {
             <img
               src={image}
               key={image}
-              alt=""
+              alt="photos de la maison"
               className="w-full h-full rounded-lg pointer-events-none object-cover"
             />
           </motion.div>

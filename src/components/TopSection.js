@@ -9,7 +9,6 @@ const TopSection = () => {
     <section className="flex flew-wrap md:flex-col-reverse">
       <Booking />
       <div className="w-full flex flex-col">
-        <Header />
         <div className="h-full px-4 flex flex-col justify-end">
           <div>
             <h1 className="text-4xl font-bolder py-2">Duplex Le14</h1>

@@ -14,6 +14,15 @@ module.exports = {
       backgroundColor: {
         persoGrey: "#e3e6ed",
       },
+      colors: {
+        socialColor: "#ede5ca",
+      },
+      fill: {
+        socialColor: "#ede5ca",
+      },
+      outlineColor: {
+        socialColor: "#ede5ca",
+      },
       fontFamily: {
         regular: ["Poppins1", "regular"],
         bolder: ["Poppins2", "bolder"],

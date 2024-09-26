@@ -39,23 +39,15 @@ const Booking = () => {
       onHoverEnd={() => setIsHover(false)}
     >
       <div className="w-full h-full min-h-[472px] relative flex items-center justify-center">
-        <img
-          src={image[2]}
-          alt=""
-          className="w-full h-full min-h-[472px] rounded-r-2xl md:rounded-lg xs:rounded-none"
-        />
-
-        {!isClicked && isHover && (
-          <motion.button
-            onClick={handleUserClick}
-            animate={isClicked ? "hidden" : "visible"}
-            transition={{ duration: 1 }}
-            variants={variants}
-            className="absolute text-white bg-red-600 hover:bg-red-700 focus:ring-4 focus:ring-red-400 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 focus:outline-none dark:focus:ring-red-800"
-          >
-            Réserver
-          </motion.button>
-        )}
+        <motion.button
+          onClick={handleUserClick}
+          animate={isClicked ? "hidden" : "visible"}
+          transition={{ duration: 1 }}
+          variants={variants}
+          className="absolute text-white bg-red-600 hover:bg-red-700 focus:ring-4 focus:ring-red-400 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 focus:outline-none dark:focus:ring-red-500"
+        >
+          Réserver
+        </motion.button>
         {isClicked && (
           <motion.div
             animate={isClicked ? "visible" : "hidden"}
@@ -64,7 +56,7 @@ const Booking = () => {
             variants={variants}
             className="absolute inset-0 flex items-center justify-center p-5"
           >
-            <div className=" bg-white w-full p-6 rounded-lg max-h-full flex-grow max-w-96">
+            <div className=" bg-white w-full p-6 rounded-lg max-h-full max-w-96 border shadow-lg">
               <form
                 className="flex flex-wrap justify-center h-full w-full font-thiner flex-1"
                 onSubmit={handleSubmit(onSubmit)}
