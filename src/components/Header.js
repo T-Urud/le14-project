@@ -1,6 +1,6 @@
 import React from "react";
 import Navigation from "./Navigation";
-import Logo from "../assets/img/Le14-logo.webp";
+import Logo from "../assets/img/Logo-Le14.webp";
 
 const Header = () => {
   return (
