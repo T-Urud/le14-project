@@ -91,6 +91,7 @@ const Booking = () => {
                   value={leavingDate}
                   onChange={setLeavingDate}
                   minDate={arrivingDate}
+                  aria-label="Sélectionner la date de départ"
                 />
               </div>
               <div className="w-full flex justify-center items-center p-2 bg-transparent border rounded-full my-1">
@@ -118,6 +119,7 @@ const Booking = () => {
               <button
                 type="submit"
                 className="text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br  focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 my-2"
+                aria-label="Bouton pour réserver votre séjour"
               >
                 Réserver
               </button>

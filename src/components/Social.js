@@ -9,7 +9,12 @@ const Social = () => {
           Retrouve-nous sur
         </h3>
         <div className="flex gap-6 justify-center flex-wrap  items-center md:p-4 xs:py-4 xs:px-0">
-          <a href="https://x.com/" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://x.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Page X du Duplex Le14"
+          >
             <motion.button
               className="h-12 w-12 grid place-items-center rounded-full outline outline-2 outline-socialColor bg-transparent border-none"
               whileHover={{
@@ -19,6 +24,7 @@ const Social = () => {
                 transform: "scale(1.35)",
               }}
               initial={{ transform: "scale(1)" }}
+              aria-label="Visiter la page X du Duplex Le14"
             >
               <motion.svg
                 className="fill-socialColor transition-all"
@@ -36,6 +42,7 @@ const Social = () => {
             href="https://www.facebook.com/"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Page Facebook du Duplex Le14"
           >
             <motion.button
               className="h-12 w-12 grid place-items-center rounded-full outline outline-2 outline-socialColor bg-transparent border-none"
@@ -46,6 +53,7 @@ const Social = () => {
                 transform: "scale(1.35)",
               }}
               initial={{ transform: "scale(1)" }}
+              aria-label="Visiter la page Facebook du Duplex Le14"
             >
               <motion.svg
                 className="fill-socialColor transition-all"
@@ -63,6 +71,7 @@ const Social = () => {
             href="https://www.instagram.com/"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Page Instagram du Duplex Le14"
           >
             <motion.button
               className="h-12 w-12 grid place-items-center rounded-full outline outline-2 outline-socialColor bg-transparent border-none"
@@ -74,6 +83,7 @@ const Social = () => {
                 transform: "scale(1.35)",
               }}
               initial={{ transform: "scale(1)" }}
+              aria-label="Visiter la page Instagram du Duplex Le14"
             >
               <motion.svg
                 className="fill-socialColor transition-all"
@@ -91,6 +101,7 @@ const Social = () => {
             href="https://www.airbnb.fr/rooms/668761335413611186?adults=1&children=0&enable_m3_private_room=true&infants=0&pets=0&search_mode=regular_search&check_in=2024-09-07&check_out=2024-09-12&source_impression_id=p3_1725472817_P3LlHi_T1MVTPXCV&previous_page_section_name=1000&federated_search_id=9a99b517-bbe2-43cb-ac30-557bcb2f1998"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Page Airbnb du Duplex Le14"
           >
             <motion.button
               className="h-12 w-12 grid place-items-center rounded-full outline outline-2 outline-socialColor bg-transparent border-none"
@@ -101,6 +112,7 @@ const Social = () => {
                 transform: "scale(1.35)",
               }}
               initial={{ transform: "scale(1)" }}
+              aria-label="Visiter la page Airbnb du Duplex Le14"
             >
               <motion.svg
                 className="fill-socialColor transition-all"

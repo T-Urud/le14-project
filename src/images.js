@@ -13,8 +13,6 @@ import chambre2 from "./assets/img/appartment/chambre2.webp";
 import sdb2 from "./assets/img/appartment/sdb2.jpeg";
 
 export default [
-  // city,
-  // cityLogo,
   terrasse2,
   salon,
   salon2,
