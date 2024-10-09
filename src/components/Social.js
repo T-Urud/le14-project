@@ -8,7 +8,7 @@ const Social = () => {
         <h3 className="mb-5 text-center md:mb-0 text-socialColor">
           Retrouve-nous sur
         </h3>
-        <div className="flex gap-6 justify-center flex-wrap  items-center md:p-4 xs:py-4 xs:px-0">
+        <div className="flex gap-6 justify-center flex-wrap  items-center md:p-4 xs:py-4 xs:px-0 xs:flex-col">
           <a
             href="https://x.com/"
             target="_blank"

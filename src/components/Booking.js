@@ -1,21 +1,26 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import DatePicker from "react-date-picker";
 import { useForm } from "react-hook-form";
 
 const Booking = () => {
-  const [arrivingDate, setArrivingDate] = useState(new Date());
-  const [leavingDate, setLeavingDate] = useState(new Date());
-
   const {
     register,
     handleSubmit,
     formState: { errors },
-  } = useForm();
-  const onSubmit = (data) => console.log(data);
+  } = useForm({ mode: "onChange" });
 
+  const [arrivingDate, setArrivingDate] = useState(new Date());
+  const [leavingDate, setLeavingDate] = useState(new Date());
   const [selectedAdults, setSelectedAdults] = useState("");
   const [selectedKids, setSelectedKids] = useState("");
+  const [isSubmitted, setIsSubmitted] = useState(false);
 
+  const onSubmit = (data) => {
+    console.log(data);
+    setIsSubmitted(true);
+  };
+
+  // calculate available room for booking
   const remainingCapacity = 4 - selectedAdults;
 
   return (
@@ -28,7 +33,7 @@ const Booking = () => {
               onSubmit={handleSubmit(onSubmit)}
             >
               <legend className="text-xl font-semibold">
-                Réserver votre séjour
+                Réserver son séjour
               </legend>
               <div className="flex gap-2 my-3 w-full">
                 <div className="w-1/2 flex justify-center items-center p-2 bg-persoGrey rounded-full">
@@ -118,10 +123,13 @@ const Booking = () => {
               </div>
               <button
                 type="submit"
-                className="text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br  focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 my-2"
+                className={`text-socialColor bg-[#9a3136] hover:bg-gradient-to-br  focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 my-2 ${
+                  // className={`text-white bg-gradient-to-r from-red-400 via-red-500 to-red-600 hover:bg-gradient-to-br  focus:outline-none font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 my-2 ${
+                  isSubmitted ? "cursor-default" : "cursor-pointer"
+                }`}
                 aria-label="Bouton pour réserver votre séjour"
               >
-                Réserver
+                {isSubmitted ? "Réservé" : "Réserver"}
               </button>
             </form>
           </div>
