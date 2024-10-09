@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import DatePicker from "react-date-picker";
 import { useForm } from "react-hook-form";
 
@@ -24,7 +24,7 @@ const Booking = () => {
   const remainingCapacity = 4 - selectedAdults;
 
   return (
-    <div className="h-auto w-full min-h-[472px] md:mt-4">
+    <div className="h-auto w-full min-h-[472px] shadow-md rounded-lg md:mt-4">
       <div className="w-full h-full min-h-[472px] relative flex items-center justify-center">
         <div className="absolute inset-0 flex items-center justify-center p-5">
           <div className=" bg-white w-full p-6 rounded-lg max-h-full max-w-96 border shadow-lg">
